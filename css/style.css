@@ -503,3 +503,83 @@ h2 {
     flex-direction: column;
   }
 }
+
+/* ==========================================================
+   AJUSTES 2026-09 — alinhamento com o CV (sem alterar o design)
+   ========================================================== */
+.hero-role {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  max-width: 520px;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex: 0 0 auto !important;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-soon {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 0.45rem 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.88rem;
+}
+
+.skills-list img {
+  width: 18px;
+  height: 18px;
+}
+
+.skills-list--text li {
+  border-radius: 10px;
+}
+
+.skills-note {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.contact-meta {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .hero-role,
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
