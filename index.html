@@ -6,6 +6,9 @@
   <title>Alexandre Silva | Software Development · APIs, Automation & Integration</title>
   <meta name="description" content="Portfólio de Alexandre Silva, finalista de Engenharia Informática (IPVC). Desenvolvimento de software full-stack, APIs, automação e integração de sistemas.">
   <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,10 +51,28 @@
         <a href="#projetos" class="btn btn-primary" data-i18n="hero.cta.projects">Ver Projetos</a>
         <a href="assets/Alexandre_Silva_CV.pdf" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="hero.cta.cv">Ver CV</a>
       </div>
+      <p class="hero-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.status">Disponível para novas oportunidades</span>
+      </p>
     </div>
 
-    <div class="hero-image">
-      <img src="assets/profile.jpg" alt="Foto de Alexandre Silva">
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="assets/profile.jpg" alt="Foto de Alexandre Silva">
+        <span class="photo-badge" data-i18n="hero.badge">Aberto a oportunidades</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PIPELINE (assinatura visual) ===================== -->
+  <section class="pipeline" aria-label="Abordagem de trabalho">
+    <p class="pipeline-caption" data-i18n="pipeline.caption">O padrão por trás da maioria dos meus projetos</p>
+    <div class="pipeline-strip">
+      <div class="pipeline-step"><span class="pipeline-node"></span><span data-i18n="pipeline.step1">Ingerir</span></div>
+      <div class="pipeline-step"><span class="pipeline-node"></span><span data-i18n="pipeline.step2">Classificar</span></div>
+      <div class="pipeline-step"><span class="pipeline-node"></span><span data-i18n="pipeline.step3">Automatizar</span></div>
+      <div class="pipeline-step"><span class="pipeline-node"></span><span data-i18n="pipeline.step4">Entregar</span></div>
     </div>
   </section>
 
@@ -92,55 +113,73 @@
 
     <div class="projects-grid">
 
-      <article class="project-card">
-        <h3>Incident Management Platform</h3>
-        <p class="project-meta" data-i18n="project0.meta">Projeto pessoal · 2026 – Presente</p>
+      <article class="project-card project-card--wip">
+        <div class="project-top">
+          <h3>Incident Management Platform</h3>
+          <p class="project-meta" data-i18n="project0.meta">Projeto pessoal · 2026 – Presente</p>
+        </div>
         <p data-i18n="project0.desc">Plataforma full-stack que gere o ciclo de vida completo de incidentes: ingestão, classificação, priorização por severidade, registo de ativos, rastreio de vulnerabilidades, workflows baseados em estados e trilho de auditoria. Modelo de dados relacional e camada de integração REST desenhados de raiz, aplicando princípios ITIL ao workflow. Backend FastAPI, base de dados PostgreSQL, front-end React.</p>
         <div class="tags">
           <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>REST API</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/incident-management-platform" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
-        <span class="project-soon" data-i18n="projects.wip">Em desenvolvimento</span>
+        <div class="project-actions">
+          <a href="https://github.com/alexandresilva-dev/incident-management-platform" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+          <span class="project-soon" data-i18n="projects.wip">Em desenvolvimento</span>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>GTM Lead Agent</h3>
-        <p class="project-meta" data-i18n="project1.meta">Projeto individual · Jun – Jul 2026</p>
+        <div class="project-top">
+          <h3>GTM Lead Agent</h3>
+          <p class="project-meta" data-i18n="project1.meta">Projeto individual · Jun – Jul 2026</p>
+        </div>
         <p data-i18n="project1.desc">Pipeline Python end-to-end que recebe uma lista de leads, enriquece cada empresa através de uma API pública e usa esse contexto para gerar um email de outreach personalizado com LLM, devolvendo o dataset enriquecido em CSV. Automatiza uma tarefa que de outra forma é totalmente manual. Coberto por uma suite de testes automatizados.</p>
         <div class="tags">
           <span>Python</span><span>REST APIs</span><span data-i18n="tag.llm">Integração LLM</span><span>pytest</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/gtm-lead-agent" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <div class="project-actions">
+          <a href="https://github.com/alexandresilva-dev/gtm-lead-agent" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>Karting Management System</h3>
-        <p class="project-meta" data-i18n="project2.meta">Projeto de equipa (2 pessoas) · Mai – Jun 2026</p>
+        <div class="project-top">
+          <h3>Karting Management System</h3>
+          <p class="project-meta" data-i18n="project2.meta">Projeto de equipa (2 pessoas) · Mai – Jun 2026</p>
+        </div>
         <p data-i18n="project2.desc">Sistema de gestão de um kartódromo (aplicação desktop + web) em Java e Spring Boot: registo e configuração de pistas, agendamento de corridas, registo de clientes e operações do dia a dia. A minha contribuição: lógica de reservas e agendamento com deteção de conflitos, prevenindo sobreposição de corridas e de recursos entre pistas. Construído com propriedade modular, Git e práticas ágeis.</p>
         <div class="tags">
           <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span data-i18n="tag.team">Equipa</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/GestaoKartodromo_29738_28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <div class="project-actions">
+          <a href="https://github.com/alexandresilva-dev/GestaoKartodromo_29738_28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>License Management System</h3>
-        <p class="project-meta" data-i18n="project3.meta">Projeto individual · Mar – Abr 2026</p>
+        <div class="project-top">
+          <h3>License Management System</h3>
+          <p class="project-meta" data-i18n="project3.meta">Projeto individual · Mar – Abr 2026</p>
+        </div>
         <p data-i18n="project3.desc">Sistema de gestão de licenças de software em C (CLI) com autenticação e controlo de acessos multinível, CRUD completo de licenças, rastreio de renovações e geração de relatórios. Persistência implementada de raiz com listas ligadas e ficheiros binários; validação de input que garante separação de papéis e integridade dos dados.</p>
         <div class="tags">
           <span>C</span><span>CLI</span><span data-i18n="tag.ds">Estruturas de dados</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/license-management-system" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <div class="project-actions">
+          <a href="https://github.com/alexandresilva-dev/license-management-system" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        </div>
       </article>
 
       <article class="project-card">
-        <h3>2D Games</h3>
-        <p class="project-meta" data-i18n="project4.meta">Projetos académicos de equipa · Abr – Mai 2025</p>
+        <div class="project-top">
+          <h3>2D Games</h3>
+          <p class="project-meta" data-i18n="project4.meta">Projetos académicos de equipa · Abr – Mai 2025</p>
+        </div>
         <p data-i18n="project4.desc">Dois jogos 2D desenvolvidos em equipa: Overlord Rising, um platformer em JavaScript/Phaser 3 com três níveis, boss e suporte PT/EN; e um jogo em Unity/C#. Cobrem game loops, física, deteção de colisões, level design e desenvolvimento colaborativo com Git.</p>
         <div class="tags">
           <span>JavaScript</span><span>Phaser 3</span><span>C#</span><span>Unity</span><span data-i18n="tag.team">Equipa</span>
         </div>
-        <div class="project-links">
+        <div class="project-actions">
           <a href="https://github.com/alexandresilva-dev/TP2-28243-28258" target="_blank" rel="noopener" class="btn btn-small">Overlord Rising</a>
           <a href="https://github.com/alexandresilva-dev/TP1-28243-28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.unity">Jogo Unity</a>
         </div>
