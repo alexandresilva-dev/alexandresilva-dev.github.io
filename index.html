@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexandre Silva | Software Developer</title>
-  <meta name="description" content="Portfólio de Alexandre Silva, estudante de Engenharia Informática.">
+  <title>Alexandre Silva | Software Development · APIs, Automation & Integration</title>
+  <meta name="description" content="Portfólio de Alexandre Silva, finalista de Engenharia Informática (IPVC). Desenvolvimento de software full-stack, APIs, automação e integração de sistemas.">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,12 +40,13 @@
     <div class="hero-text">
       <p class="hero-greeting" data-i18n="hero.greeting">Olá, eu sou</p>
       <h1 class="hero-name">Alexandre Silva</h1>
+      <p class="hero-role" data-i18n="hero.role">Finalista de Engenharia Informática · Desenvolvimento de Software · APIs, Automação e Integração</p>
       <p class="hero-tagline" data-i18n="hero.tagline">
-        Estudante de Engenharia Informática, focado em desenvolvimento web full-stack (Java/Spring Boot, JavaScript/TypeScript), com experiência em vendas e interesse em automação e IA aplicada.
+        Desenvolvimento full-stack com foco em design e integração de APIs REST, modelação de dados relacionais e automação de processos. Python, Java, JavaScript/TypeScript, C e C#.
       </p>
       <div class="hero-buttons">
         <a href="#projetos" class="btn btn-primary" data-i18n="hero.cta.projects">Ver Projetos</a>
-        <a href="assets/cv-alexandre-silva.pdf" target="_blank" class="btn btn-secondary" data-i18n="hero.cta.cv">Ver CV</a>
+        <a href="assets/cv-alexandre-silva.pdf" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="hero.cta.cv">Ver CV</a>
       </div>
     </div>
 
@@ -62,19 +63,25 @@
       <div class="timeline">
         <div class="timeline-item">
           <h3 data-i18n="about.edu.degree">Licenciatura em Engenharia Informática</h3>
-          <p class="timeline-sub" data-i18n="about.edu.school">Instituto Politécnico de Viana do Castelo</p>
-          <p class="timeline-date" data-i18n="about.edu.date">Setembro 2022 - Presente</p>
+          <p class="timeline-sub" data-i18n="about.edu.school">Instituto Politécnico de Viana do Castelo (IPVC)</p>
+          <p class="timeline-date" data-i18n="about.edu.date">Set 2022 – Jun 2027 (previsto)</p>
         </div>
 
         <div class="timeline-item">
           <h3 data-i18n="about.exp.title">Assistente de Vendas</h3>
-          <p class="timeline-sub" data-i18n="about.exp.sub">Worten Portugal &middot; Meio período</p>
-          <p class="timeline-date" data-i18n="about.exp.date">2022 - Presente</p>
+          <p class="timeline-sub" data-i18n="about.exp.sub">Worten Portugal · Part-time · Porto</p>
+          <p class="timeline-date" data-i18n="about.exp.date">2022 – Presente</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3 data-i18n="about.cert.title">Certificações em curso</h3>
+          <p class="timeline-sub" data-i18n="about.cert.sub">ISC2 Certified in Cybersecurity (CC) · ITIL 4 Foundation</p>
+          <p class="timeline-date" data-i18n="about.cert.date">Conclusão prevista: Fev 2027</p>
         </div>
       </div>
 
       <p class="about-bio" data-i18n="about.bio">
-        Olá! Sou o Alexandre, estudante de Engenharia Informática focado em desenvolvimento full-stack. Desenvolvi em equipa um sistema completo de gestão de um kartódromo (Java, Spring Boot, Thymeleaf, Hibernate), com aplicações web e desktop, e construí o GTM Lead Agent, uma ferramenta em Python que enriquece leads de vendas e gera outreach com IA. Combino quatro anos de experiência em vendas na Worten com o gosto de aprender fazendo, e procuro uma oportunidade working student / part-time em desenvolvimento de software.
+        Finalista de Engenharia Informática com experiência prática de desenvolvimento em Python, Java, JavaScript/TypeScript, C e C#, construída em projetos de equipa e trabalho autónomo. Estou confortável em todo o stack — design e integração de APIs REST, modelação de dados relacionais e front-end — com particular foco em automação e ligação entre sistemas. Recentemente construí uma plataforma full-stack de gestão de incidentes (FastAPI, PostgreSQL, React). Tenho quatro anos de experiência de atendimento ao cliente em retalho tecnológico, em paralelo com o curso a tempo inteiro. Procuro uma primeira oportunidade profissional em engenharia de software, integração ou consultoria tecnológica, com interesse a longo prazo em Security Operations.
       </p>
     </div>
   </section>
@@ -86,39 +93,57 @@
     <div class="projects-grid">
 
       <article class="project-card">
-          <h3>Karting Track Management</h3>
-          <p data-i18n="project0.desc">Sistema full-stack de gestão de um kartódromo (aplicação web + desktop) em Java, Spring Boot, Thymeleaf e Hibernate, desenvolvido em equipa: autenticação, dashboards, reservas, relatórios PDF e estatísticas.</p>
-          <div class="tags">
-            <span>Java</span><span>Spring Boot</span><span>Full-stack</span>
-          </div>
-          <a href="https://github.com/alexandresilva-dev/GestaoKartodromo_29738_28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
-        </article>
-
-        <article class="project-card">
-        <h3>GTM Lead Agent</h3>
-        <p data-i18n="project1.desc">Ferramenta em Python que enriquece leads de vendas através de uma API pública e gera outreach personalizado com IA (Claude/GPT), com testes automatizados e CLI.</p>
+        <h3>Incident Management Platform</h3>
+        <p class="project-meta" data-i18n="project0.meta">Projeto pessoal · 2026 – Presente</p>
+        <p data-i18n="project0.desc">Plataforma full-stack que gere o ciclo de vida completo de incidentes: ingestão, classificação, priorização por severidade, registo de ativos, rastreio de vulnerabilidades, workflows baseados em estados e trilho de auditoria. Modelo de dados relacional e camada de integração REST desenhados de raiz, aplicando princípios ITIL ao workflow. Backend FastAPI, base de dados PostgreSQL, front-end React.</p>
         <div class="tags">
-          <span>Python</span><span>APIs</span><span>LLMs</span>
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>REST API</span>
+        </div>
+        <a href="https://github.com/alexandresilva-dev/incident-management-platform" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <span class="project-soon" data-i18n="projects.wip">Em desenvolvimento</span>
+      </article>
+
+      <article class="project-card">
+        <h3>GTM Lead Agent</h3>
+        <p class="project-meta" data-i18n="project1.meta">Projeto individual · Jun – Jul 2026</p>
+        <p data-i18n="project1.desc">Pipeline Python end-to-end que recebe uma lista de leads, enriquece cada empresa através de uma API pública e usa esse contexto para gerar um email de outreach personalizado com LLM, devolvendo o dataset enriquecido em CSV. Automatiza uma tarefa que de outra forma é totalmente manual. Coberto por uma suite de testes automatizados.</p>
+        <div class="tags">
+          <span>Python</span><span>REST APIs</span><span data-i18n="tag.llm">Integração LLM</span><span>pytest</span>
         </div>
         <a href="https://github.com/alexandresilva-dev/gtm-lead-agent" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
       </article>
 
       <article class="project-card">
-        <h3>Overlord Rising</h3>
-        <p data-i18n="project2.desc">Jogo 2D (Phaser/JS) desenvolvido em equipa com um colega, no âmbito de um projeto académico.</p>
+        <h3>Karting Management System</h3>
+        <p class="project-meta" data-i18n="project2.meta">Projeto de equipa (2 pessoas) · Mai – Jun 2026</p>
+        <p data-i18n="project2.desc">Sistema de gestão de um kartódromo (aplicação desktop + web) em Java e Spring Boot: registo e configuração de pistas, agendamento de corridas, registo de clientes e operações do dia a dia. A minha contribuição: lógica de reservas e agendamento com deteção de conflitos, prevenindo sobreposição de corridas e de recursos entre pistas. Construído com propriedade modular, Git e práticas ágeis.</p>
         <div class="tags">
-          <span>JavaScript</span><span>Phaser</span><span data-i18n="tag.team">Equipa</span>
+          <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span data-i18n="tag.team">Equipa</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/TP2-28243-28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <a href="https://github.com/alexandresilva-dev/GestaoKartodromo_29738_28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
       </article>
 
       <article class="project-card">
-        <h3>TP1 &ndash; Projeto Unity</h3>
-        <p data-i18n="project3.desc">Projeto académico em equipa desenvolvido em Unity/C#, com controlo de versões em Git.</p>
+        <h3>License Management System</h3>
+        <p class="project-meta" data-i18n="project3.meta">Projeto individual · Mar – Abr 2026</p>
+        <p data-i18n="project3.desc">Sistema de gestão de licenças de software em C (CLI) com autenticação e controlo de acessos multinível, CRUD completo de licenças, rastreio de renovações e geração de relatórios. Persistência implementada de raiz com listas ligadas e ficheiros binários; validação de input que garante separação de papéis e integridade dos dados.</p>
         <div class="tags">
-          <span>C#</span><span>Unity</span><span data-i18n="tag.team">Equipa</span>
+          <span>C</span><span>CLI</span><span data-i18n="tag.ds">Estruturas de dados</span>
         </div>
-        <a href="https://github.com/alexandresilva-dev/TP1-28243-28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+        <a href="https://github.com/alexandresilva-dev/license-management-system" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.github">GitHub</a>
+      </article>
+
+      <article class="project-card">
+        <h3>2D Games</h3>
+        <p class="project-meta" data-i18n="project4.meta">Projetos académicos de equipa · Abr – Mai 2025</p>
+        <p data-i18n="project4.desc">Dois jogos 2D desenvolvidos em equipa: Overlord Rising, um platformer em JavaScript/Phaser 3 com três níveis, boss e suporte PT/EN; e um jogo em Unity/C#. Cobrem game loops, física, deteção de colisões, level design e desenvolvimento colaborativo com Git.</p>
+        <div class="tags">
+          <span>JavaScript</span><span>Phaser 3</span><span>C#</span><span>Unity</span><span data-i18n="tag.team">Equipa</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/alexandresilva-dev/TP2-28243-28258" target="_blank" rel="noopener" class="btn btn-small">Overlord Rising</a>
+          <a href="https://github.com/alexandresilva-dev/TP1-28243-28258" target="_blank" rel="noopener" class="btn btn-small" data-i18n="projects.unity">Jogo Unity</a>
+        </div>
       </article>
 
     </div>
@@ -131,28 +156,72 @@
     <div class="skills-grid">
       <div class="skills-group">
         <h3 data-i18n="skills.languages">Linguagens</h3>
-        <div class="skills-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML" title="HTML">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS" title="CSS">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" title="JavaScript">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="Python" title="Python">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="Java" title="Java">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="TypeScript" title="TypeScript">
-        </div>
+        <ul class="skills-list">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="">Python</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="">JavaScript</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="">TypeScript</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="">Java</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" alt="">C#</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" alt="">C</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-plain.svg" alt="">SQL</li>
+        </ul>
       </div>
 
       <div class="skills-group">
-        <h3 data-i18n="skills.tools">Ferramentas &amp; Frameworks</h3>
-        <div class="skills-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="Node.js" title="Node.js">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" title="Spring Boot">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" alt="Flutter" title="Flutter">
-        </div>
+        <h3 data-i18n="skills.web">Web &amp; Frameworks</h3>
+        <ul class="skills-list">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="">Node.js</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-plain.svg" alt="">FastAPI</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">Spring Boot</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="">HTML</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="">CSS</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" alt="">Flutter</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="">Angular</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 data-i18n="skills.db">Bases de Dados</h3>
+        <ul class="skills-list">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" alt="">PostgreSQL</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MySQL</li>
+        </ul>
+        <p class="skills-note" data-i18n="skills.dbnote">Modelação de dados, queries e administração</p>
+      </div>
+
+      <div class="skills-group">
+        <h3 data-i18n="skills.tools">Ferramentas &amp; Metodologias</h3>
+        <ul class="skills-list">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">GitHub</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="">VS Code</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="">IntelliJ IDEA</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" alt="">Trello</li>
+          <li>Agile (Scrum)</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 data-i18n="skills.integration">Integração &amp; Automação</h3>
+        <ul class="skills-list skills-list--text">
+          <li>REST APIs</li>
+          <li data-i18n="skills.int.llm">Integração LLM / IA</li>
+          <li data-i18n="skills.int.scripting">Scripting e automação de processos</li>
+          <li data-i18n="skills.int.testing">Testes automatizados</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 data-i18n="skills.security">Segurança &amp; Operações</h3>
+        <ul class="skills-list skills-list--text">
+          <li data-i18n="skills.sec.1">Gestão do ciclo de vida de incidentes (ITIL)</li>
+          <li data-i18n="skills.sec.2">Classificação e priorização de alertas</li>
+          <li data-i18n="skills.sec.3">Rastreio de ativos e vulnerabilidades</li>
+          <li data-i18n="skills.sec.4">Trilhos de auditoria e separação de acessos por papel</li>
+          <li data-i18n="skills.sec.5">NIST CSF · OWASP Top 10 · MITRE ATT&amp;CK · TryHackMe</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -163,10 +232,12 @@
 
     <div class="contact-content">
       <a href="mailto:alexandremiguelsilva112002@gmail.com" class="contact-email">alexandremiguelsilva112002@gmail.com</a>
+      <p class="contact-meta" data-i18n="contact.location">Porto, Portugal</p>
 
       <div class="contact-links">
         <a href="https://github.com/alexandresilva-dev" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/alexandresilva-dev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/cv-alexandre-silva.pdf" target="_blank" rel="noopener" data-i18n="contact.cv">CV (PDF)</a>
       </div>
     </div>
   </section>
@@ -176,7 +247,7 @@
     <div class="footer-content">
       <div>
         <h3>Alexandre Silva</h3>
-        <p data-i18n="footer.tagline">Estudante de Engenharia Informática | Criar. Aprender. Evoluir.</p>
+        <p data-i18n="footer.tagline">Finalista de Engenharia Informática · Desenvolvimento de Software</p>
       </div>
 
       <div class="footer-links">
