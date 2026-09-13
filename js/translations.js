@@ -17,6 +17,14 @@ const translations = {
     "hero.tagline": "Desenvolvimento full-stack com foco em design e integração de APIs REST, modelação de dados relacionais e automação de processos. Python, Java, JavaScript/TypeScript, C e C#.",
     "hero.cta.projects": "Ver Projetos",
     "hero.cta.cv": "Ver CV",
+    "hero.status": "Disponível para novas oportunidades",
+    "hero.badge": "Aberto a oportunidades",
+
+    "pipeline.caption": "O padrão por trás da maioria dos meus projetos",
+    "pipeline.step1": "Ingerir",
+    "pipeline.step2": "Classificar",
+    "pipeline.step3": "Automatizar",
+    "pipeline.step4": "Entregar",
 
     "about.title": "Sobre Mim",
     "about.edu.degree": "Licenciatura em Engenharia Informática",
@@ -88,6 +96,14 @@ const translations = {
     "hero.tagline": "Full-stack development with a focus on REST API design and integration, relational data modelling and process automation. Python, Java, JavaScript/TypeScript, C and C#.",
     "hero.cta.projects": "View Projects",
     "hero.cta.cv": "View CV",
+    "hero.status": "Open to new opportunities",
+    "hero.badge": "Open to work",
+
+    "pipeline.caption": "The pattern behind most of my projects",
+    "pipeline.step1": "Ingest",
+    "pipeline.step2": "Classify",
+    "pipeline.step3": "Automate",
+    "pipeline.step4": "Deliver",
 
     "about.title": "About Me",
     "about.edu.degree": "BSc in Computer Engineering",
